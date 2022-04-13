@@ -193,7 +193,9 @@
 <p>Because of these factors, the way a prototype is built on Figma does not necessarily translate 1:1 to how the designs should be build as code. For example, Figma designs does not use SCSS mixins to simplify code or percentages as units of size.</p>
 <p>Likewise, we must contend with the fact that Figma designs are static screens tied to very specific viewport sizes. As developers we need to recreate the Figma designs while also considering the intent behind a design.</p>
 <p>As a developer, we need to effectively communicate with designers at multiple stage of the Figma design process. This means providing recommendations or alternatives that are simpler and easier for the developer to implement and maintain.</p>
-<p>At CivicTechJobs, designers use two standard viewport widths when creating our UIs: 1440px for desktop and 375px for mobile. The appearance of the UI beyond these two sizes are determined by us, as developers, as we componentize the Figma designs. Do note though that the smallest, popular, mobile screen width is 320px, which is the miminum when designing the UI.</p>
+<p>At CivicTechJobs, designers use two standard viewport widths when creating our UIs: 1440px for desktop and 375px for mobile. The appearance of the UI beyond these two sizes are determined by us, as developers, as we componentize the Figma designs. Do note though that our screen size of interest changes depending on the stage of our project. Right now, our current size of interest is:</p>
+<pre><code>1025px and up (or, laptop and up)
+</code></pre>
 <h3 id="scalable-and-responsive-components">Scalable and Responsive Components</h3>
 <p>When creating or using components, it is good to keep in mind the differences between a scalable component and responsive component.</p>
 <p>A scalable component:</p>
