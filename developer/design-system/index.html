@@ -239,7 +239,7 @@
 };
 </code></pre>
 <p><em><p style="text-align: center;">For this &lt;Button> component, PropTypes provide clues on the component's props. From these hints, a developer can guess that a small, long button would be declared as &lt;Button size="sm" length="long"> </p></em></p>
-<p>Because comprehensive documentation is difficult for a small team to maintain, we rely on PropTypes and cleanly written code to provide clues on how to use each component. We recommend new developers take time to play with the components in <a href="https://github.com/hackforla/CivicTechJobs/tree/main/frontend/src/components"><code>components/</code></a> to fully understand how to utilize them.</p>
+<p>Because comprehensive documentation is difficult for a small team to maintain, we rely on PropTypes and cleanly written code to provide clues on how to use each component. We recommend new developers take time to play with the components in <a href="https://github.com/hackforla/CivicTechJobs/tree/main/frontend/src/components"><code>components/</code></a> to fully understand how to utilize them. You can use the <a href="localhost:8000/demo">/demo</a> web endpoint and <a href="https://github.com/hackforla/CivicTechJobs/blob/main/app/frontend/src/pages/Demo/Demo.js">Demo.js</a> when developing to play around with our components.</p>
 <h2 id="components">Components</h2>
 <p>While we can use pure CSS as our styling sheet, using SCSS with React components allows us to standardize our components in a powerful way. Componentization allows:</p>
 <ul>
@@ -251,9 +251,6 @@
 <p>Because of these benefits, we use a component-first approach to developing web pages. Please componentize as much as possible and use them to build high-quality web pages!</p>
 <p>As a note, the DS is put together based on industry trends and practices. If you have ever explored Bootstrap, MUI, or Atlassian Design System, you will see many similarities between their components and ours.</p>
 <h3 id="mixins-and-classes">Mixins and Classes</h3>
-<blockquote>
-<p>"Use classes in HTML but mixins in SCSS."</p>
-</blockquote>
 <p>Most of our styles have a class and mixin equivalent. The class, for the most part, is created from just declaring the mixin inside the class.</p>
 <pre><code class="language-SCSS">@mixin hidden {
   display: none;
@@ -277,9 +274,6 @@
 </code></pre>
 <p><em><p style="text-align: center;">Please use the mixin version when you want your own custom style to inherit from an existing style!</p></em></p>
 <h3 id="layout-and-columns">Layout and Columns</h3>
-<blockquote>
-<p>"Using layout and column utilities automatically adds scalability to your pages."</p>
-</blockquote>
 <p>As with most design systems, we use a standard 12-column system to subdivide our layouts. Each column, without spacing, is worth *8.33% of its container's width**. This means that columns are, by default, scalable.</p>
 <p>To use of our column classes, first declare a parent container with the <code>.flex-container</code> class. Then use <code>col-*</code> classes in each children, replacing the <code>*</code> with the number for the column size.</p>
 <iframe src="https://codesandbox.io/embed/simple-layout-rwy8qh?fontsize=14&hidenavigation=1&theme=dark"
