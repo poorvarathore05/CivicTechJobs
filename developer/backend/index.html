@@ -72,7 +72,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown active">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Roles <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Docs <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
   <li class="dropdown-submenu">
@@ -112,39 +112,40 @@
 </li>
     </ul>
   </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Misc <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
                                     
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Misc</a>
+    <ul class="dropdown-menu">
+            
 <li>
     <a href="../../misc/ada-guide/" class="dropdown-item">ADA Guide</a>
 </li>
-                                    
+            
 <li>
     <a href="../../misc/glossary/" class="dropdown-item">Glossary</a>
 </li>
-                                    
+            
 <li>
     <a href="../../misc/history/" class="dropdown-item">History</a>
 </li>
-                                    
+            
 <li>
     <a href="../../misc/our-process/" class="dropdown-item">Our Process</a>
 </li>
-                                    
+            
 <li>
     <a href="../../misc/research-wiki-template/" class="dropdown-item">Research Wiki Template</a>
 </li>
-                                    
+            
 <li>
     <a href="../../misc/security-updates/" class="dropdown-item">Security Updates</a>
 </li>
-                                    
+            
 <li>
     <a href="../../misc/the-team/" class="dropdown-item">The Team</a>
 </li>
+    </ul>
+  </li>
                                 </ul>
                             </li>
                             <li class="navitem">
@@ -264,11 +265,15 @@
 <p>The backend architecture is consists the <code>docker/</code> directory, the Django <code>config/</code> project, the <code>frontend/</code> and <code>server/</code> Django apps, and a couple of Django or Docker-related loose files. In addition to serving as part of our backend, the <code>frontend/</code> directory also serves our frontend architecture. More about the <code>frontend/</code> directory as it relates our frontend architecture can be found in our guide on <a href="../../developer/frontend/">Frontend Architecture</a>.</p>
 <h2 id="overview-of-directories-and-files">Overview of Directories and Files</h2>
 <ul>
-<li><strong>config/:</strong> houses the Django project files.</li>
+<li><strong>config/:</strong> houses the Django project files.<ul>
 <li><strong>&lt;Django Project Files>:</strong> More on the files in this directory can be found in <a href="https://docs.djangoproject.com/en/4.0/">Django's documentation</a>.</li>
-<li><strong>&lt;Django App>:</strong> currently we have two directories that are Django apps: <code>frontend/</code> and <code>server/</code>. Within these directories are the default <code>&lt;Django App Files&gt;</code> that are created with every app as well as <code>&lt;RESTFramework Files&gt;</code>.</li>
+</ul>
+</li>
+<li><strong>&lt;Django App>:</strong> currently we have two directories that are Django apps: <code>frontend/</code> and <code>server/</code>. Within these directories are the default <code>&lt;Django App Files&gt;</code> that are created with every app as well as <code>&lt;RESTFramework Files&gt;</code>.<ul>
 <li><strong>&lt;Django App Files>:</strong> These files make up a Django App. To know more about these apps, read the section about <a href="#django-app-files">Django App Files</a>.</li>
 <li><strong>&lt;RESTFramework Files>:</strong> Currently consists of only <code>serializers.py</code>, these files are additional files that support Django via the <a href="https://www.django-rest-framework.org/">DjangoRestFramework library</a>.</li>
+</ul>
+</li>
 <li><strong>manage.py:</strong> Part of Django, this is the entry point file for starting the Django server. This file handles a lot of critical settings, so be sure to read up on it in <a href="https://docs.djangoproject.com/en/4.0/ref/django-admin/">Django's documentation</a>.</li>
 <li><strong>requirements.txt:</strong> A Python file that contains all dependencies for a project. It is the Python equivalent to Javascript's <code>package.json</code>.</li>
 </ul>
